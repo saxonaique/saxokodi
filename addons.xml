@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="1.0.1" provider-name="Philipp Temminghoff (phil65)">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.autocompletion" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="plugin.py" />
+    <extension point="xbmc.python.script"       library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">AutoCompletion for the virtual keyboard (needs skin support)</summary>
+        <description lang="en">AutoCompletion for the virtual keyboard (needs skin support)</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+        <source>https://github.com/phil65/plugin.program.autocompletion</source>
+    </extension>
+</addon>
+
+<addon id="plugin.program.addon_activador"
+       name="[COLOR blue]Kodi 17,18 Addon Activador[/COLOR]"
+	   version="1.0.0"
+	   provider-name="bit.ly/[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] | bitLoki1979 | HSK-DE">
+    <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="activador.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Kodi 17,18 Addon Activador</summary>
+    <description>Apos update do Kodi 16 para o Kodi 17, este addon permite activar os addons instalados com um so click.</description>
+    </extension>
+</addon>
+
+<addon id="plugin.video.ccloudtv"
+       name="cCloud TV"
+       version="1.5.6"
+       provider-name="rattlehead">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver"  version="3.0.0" optional="true"/>
+	<import addon="script.module.liveresolver"  version="0.1.28"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.common.plugin.cache" version="2.5.5"/>
+    <import addon="script.tvaddons.debug.log" optional="true" />
+</requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>All the best from cCloud TV</summary>
+    <description>cCloud is an open source cloud based social IPTV service. It is built by the community for the community, where streaming is just a click away. Just click, play and stream. Yes, it's that simple. Just go to [COLOR blue]http://ccloudtv.org[/COLOR] and enjoy:) Please report any channels that are down here [COLOR blue]http://www.tiny.cc/reportchs[/COLOR] Users can now check servers status which can be found at [COLOR blue]http://ccloudtv.org/status[/COLOR]
+    </description>
+	<license>http://www.gnu.org/licenses/</license>
+    <forum>http://ccloudtv.org/forum</forum>
+    <website>http://ccloudtv.org</website>
+    <website>http://facebook.com/ccloudapp</website>
+    <website>http://twitter.com/ccloudapp</website>
+    <email></email>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.euronews.com" version="1.1.2" name="Euronews" provider-name="Twilight0">
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+		<import addon="script.module.tulip" version="1.0.6"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Euronews addon for Kodi</summary>
+		<description lang="en">Euronews, the most watched news channel in Europe, covers international news in various languages.[CR]With 400 journalists from more than 30 nationalities, Euronews offers a unique, independent and totally impartial perspective on world events.[CR]Available languages: English, French, German, Greek, Hungarian, Italian, Portuguese, Russian, Spanish, Turkish and Ukrainian</description>
+		<disclaimer lang="en">This addon is not published nor endorsed by euronews.com</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<!--<source></source>-->
+		<website>http://www.euronews.com/</website>
+		<news>
+[B]1.1.2[/B]
+- Fixed Live Resolver
+
+[B]1.1.1[/B]
+- Rebased to utilize tulip libraries
+
+[B]1.1.0[/B]
+- Tweaked sections
+- Added add-on screenshots
+
+[B]1.0.0[/B]
+- Initial version
+		</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+		</assets>
+		<platform>all</platform>
+		<language></language>
+		<forum></forum>
+		<email></email>
+	</extension>
+</addon>
+
+
+<addon id="repository.saxokodi" name="saxokodi official Repo" version="1.1.0" provider-name="saxokodi">
+	<extension point="xbmc.addon.repository" name="saxokodi official Repo">
+		<info compressed="false">https://raw.github.com/saxonaique/saxokodi/master/addons.xml</info>
+		<checksum>https://raw.github.com/saxonaique/saxokodi/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/saxonaique/saxokodi/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>saxokodi Repo</summary>
+   		<description lang="en">Instala los Addons de saxokodi.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.bonanza"
+       name="IPTV BONANZA"
+       version="1.0.0"
+       provider-name="BONANZA">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.5.7" />
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">IPTV BONANZA</summary>
+        <description lang="en">Find and play daily IPTV lists in blogs and websites.</description>
+    </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" version="2.7.1" name="f4mTester" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+
+
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.livehub" name="[B][COLOR ghostwhite]Live[/COLOR][COLOR red] Hub[/COLOR][/B]" version="1.7" provider-name="sClarke">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Live Hub - Bringing Live TV To Your Media Device</summary>
+    <description lang="en">Live Hub - Bringing Live TV To Your Media Device. Kodi 17+ is Recommended.</description>
+	<disclaimer lang="en">The author does not host or own any content found within this Addon. The Author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.program.totalinstaller" name=" [COLOR=dodgerblue]C[/COLOR][COLOR ghostwhite]ommunity[/COLOR] [COLOR=dodgerblue]P[/COLOR][COLOR ghostwhite]ortal[/COLOR]" version="3.2.4" provider-name="noobsandnerds.com">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR=ghostwhite]C[/COLOR][COLOR dodgerblue]ommunity[/COLOR] [COLOR=ghostwhite]P[/COLOR][COLOR dodgerblue]ortal[/COLOR]</summary>
+	<description>Your all in one Installer. The simplest way to have a fully setup system in a matter of minutes. Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
+    <ref>47dde68954e71460cb34886583bf21d7</ref>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.spotify" version="1.0.26" name="Spotify" provider-name="marcelveldt">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.six" version="1.9.0"/>
+        <import addon="script.module.unidecode" version="0.4.14"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>audio</provides>
+	</extension>
+    <extension point="xbmc.python.library" library="spotifyservice.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Unofficial Spotify music plugin for Kodi</summary>
+        <description>Requires a Spotify premium account.</description>
+        <disclaimer>This product uses SPOTIFY(R) CORE but is not endorsed, certified or otherwise approved in any way by Spotify. Spotify is the registered trade mark of the Spotify Group.</disclaimer>
+    </extension>
+</addon>
+</addons>
