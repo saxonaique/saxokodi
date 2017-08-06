@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="plugin.audio.spotify" version="1.0.26" name="Spotify" provider-name="marcelveldt">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="xbmc.addon" version="12.0.0"/>
+        <import addon="script.module.requests" version="2.3.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.six" version="1.9.0"/>
+        <import addon="script.module.unidecode" version="0.4.14"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>audio</provides>
+	</extension>
+    <extension point="xbmc.python.library" library="spotifyservice.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Unofficial Spotify music plugin for Kodi</summary>
+        <description>Requires a Spotify premium account.</description>
+        <disclaimer>This product uses SPOTIFY(R) CORE but is not endorsed, certified or otherwise approved in any way by Spotify. Spotify is the registered trade mark of the Spotify Group.</disclaimer>
+    </extension>
+</addon>
+
+<addon id="plugin.program.addon_activador"
+       name="[COLOR blue]Kodi 17,18 Addon Activador[/COLOR]"
+	   version="1.0.0"
+	   provider-name="bit.ly/[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] | bitLoki1979 | HSK-DE">
+    <requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="activador.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>Kodi 17,18 Addon Activador</summary>
+    <description>Apos update do Kodi 16 para o Kodi 17, este addon permite activar os addons instalados com um so click.</description>
+    </extension>
+</addon>
+
 <addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="1.0.1" provider-name="Philipp Temminghoff (phil65)">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
@@ -20,20 +58,39 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.addon_activador"
-       name="[COLOR blue]Kodi 17,18 Addon Activador[/COLOR]"
-	   version="1.0.0"
-	   provider-name="bit.ly/[COLOR blue][B]AMO[/B][/COLOR][COLOR green]box[/COLOR] | bitLoki1979 | HSK-DE">
+<addon id="plugin.program.totalinstaller" name=" [COLOR=dodgerblue]C[/COLOR][COLOR ghostwhite]ommunity[/COLOR] [COLOR=dodgerblue]P[/COLOR][COLOR ghostwhite]ortal[/COLOR]" version="3.2.4" provider-name="noobsandnerds.com">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR=ghostwhite]C[/COLOR][COLOR dodgerblue]ommunity[/COLOR] [COLOR=ghostwhite]P[/COLOR][COLOR dodgerblue]ortal[/COLOR]</summary>
+	<description>Your all in one Installer. The simplest way to have a fully setup system in a matter of minutes. Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
+    <ref>47dde68954e71460cb34886583bf21d7</ref>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.bonanza"
+       name="IPTV BONANZA"
+       version="1.0.0"
+       provider-name="BONANZA">
     <requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="activador.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>Kodi 17,18 Addon Activador</summary>
-    <description>Apos update do Kodi 16 para o Kodi 17, este addon permite activar os addons instalados com um so click.</description>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.5.7" />
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">IPTV BONANZA</summary>
+        <description lang="en">Find and play daily IPTV lists in blogs and websites.</description>
     </extension>
 </addon>
 
@@ -117,41 +174,6 @@
 	</extension>
 </addon>
 
-
-<addon id="repository.saxokodi" name="saxokodi official Repo" version="1.1.0" provider-name="saxokodi">
-	<extension point="xbmc.addon.repository" name="saxokodi official Repo">
-		<info compressed="false">https://raw.github.com/saxonaique/saxokodi/master/addons.xml</info>
-		<checksum>https://raw.github.com/saxonaique/saxokodi/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.github.com/saxonaique/saxokodi/master</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>saxokodi Repo</summary>
-   		<description lang="en">Instala los Addons de saxokodi.</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.video.bonanza"
-       name="IPTV BONANZA"
-       version="1.0.0"
-       provider-name="BONANZA">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.5.7" />
-    </requires>
-    <extension point="xbmc.python.pluginsource"
-               library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <license>GPL 2.0</license>
-        <summary lang="en">IPTV BONANZA</summary>
-        <description lang="en">Find and play daily IPTV lists in blogs and websites.</description>
-    </extension>
-</addon>
-
 <addon id="plugin.video.f4mTester" version="2.7.1" name="f4mTester" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -185,40 +207,43 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.totalinstaller" name=" [COLOR=dodgerblue]C[/COLOR][COLOR ghostwhite]ommunity[/COLOR] [COLOR=dodgerblue]P[/COLOR][COLOR ghostwhite]ortal[/COLOR]" version="3.2.4" provider-name="noobsandnerds.com">
+<addon id="plugin.video.pelisalacarta"
+    name="pelisalacarta"
+    version="4.0.6"
+    provider-name="tvalacarta">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
+    <provides>video</provides>
   </extension>
-  <extension point="xbmc.service" library="service.py" start="login" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">[COLOR=ghostwhite]C[/COLOR][COLOR dodgerblue]ommunity[/COLOR] [COLOR=ghostwhite]P[/COLOR][COLOR dodgerblue]ortal[/COLOR]</summary>
-	<description>Your all in one Installer. The simplest way to have a fully setup system in a matter of minutes. Visit www.noobsandnerds.com and become a part of our great family, you get to choose what The Community Portal holds!</description>
-    <ref>47dde68954e71460cb34886583bf21d7</ref>
+    <summary lang="es">Películas y series a la carta</summary>
+    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano e Inglés.</description>
+    <summary lang="en">Movies and TV Shows on demand</summary>
+    <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian and English.</description>
     <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/pelisalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="library_service.py" start="login|startup">
   </extension>
 </addon>
 
-<addon id="plugin.audio.spotify" version="1.0.26" name="Spotify" provider-name="marcelveldt">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="xbmc.addon" version="12.0.0"/>
-        <import addon="script.module.requests" version="2.3.0"/>
-        <import addon="script.module.simplejson" version="3.3.0"/>
-        <import addon="script.module.six" version="1.9.0"/>
-        <import addon="script.module.unidecode" version="0.4.14"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="plugin.py">
-		<provides>audio</provides>
+<addon id="repository.saxokodi" name="saxokodi Repo" version="1.1.1" provider-name="saxokodi">
+	<extension point="xbmc.addon.repository" name="Kodi-Mexico official Repo">
+		<info compressed="false">https://raw.githubusercontent.com/saxonaique/saxokodi/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/saxonaique/saxokodi/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/saxonaique/saxokodi/master</datadir>
 	</extension>
-    <extension point="xbmc.python.library" library="spotifyservice.py" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary>Unofficial Spotify music plugin for Kodi</summary>
-        <description>Requires a Spotify premium account.</description>
-        <disclaimer>This product uses SPOTIFY(R) CORE but is not endorsed, certified or otherwise approved in any way by Spotify. Spotify is the registered trade mark of the Spotify Group.</disclaimer>
-    </extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>repository saxokodi</summary>
+   		<description lang="en">Instala los Addons de repository.saxokodi.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 </addons>
