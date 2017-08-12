@@ -233,6 +233,23 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.Wizard"
+	   name="SAXOKODI"
+	   version="0.0.1"
+	   provider-name="SAXONAIQUE">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Wizard</summary>
+    <description>Instalador inteligente que ayuda a configurar tu Kodi correctamente</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.saxokodi" name="saxokodi Repo" version="1.1.1" provider-name="saxokodi">
 	<extension point="xbmc.addon.repository" name="Kodi-Mexico official Repo">
 		<info compressed="false">https://raw.githubusercontent.com/saxonaique/saxokodi/master/addons.xml</info>
